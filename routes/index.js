@@ -11,11 +11,6 @@ router.get('/', (req, res)=> {
   )
 });
 
-/* GET from API */
-router.get('/api', (req, res)=> {
-  Api.getAll().then((entity)=>
-  res.render('index', { title: 'Express', users: entity})
-);
-});
+
 
 module.exports = router;
